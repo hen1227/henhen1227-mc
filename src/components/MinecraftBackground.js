@@ -71,10 +71,7 @@ const MinecraftBackground = () => {
     }, []);
 
     return (
-        <div className="App">
-            <div id="cubeContainer"></div>
-            {/* Rest of your components */}
-        </div>
+        <div id="cubeContainer"></div>
     );
 };
 

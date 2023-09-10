@@ -1,21 +1,39 @@
 .titleImage {
     width: 100vw;
-    height: 400px;
+    height: 420px;
     z-index: 0;
-    position: relative;
+    position: absolute;
     top: 0;
     overflow: clip;
 }
 
-.titleImage h1 {
+.title {
     padding: 0;
     margin: 0;
-    top: 160px;
+    top: 300px;
     position: absolute;
     z-index: 5;
-
+    font-size: 5em;
     width: 100%;
 }
+
+.details-list {
+    width: 60%;
+    text-align: left;
+    margin: 30px auto 30px auto;
+}
+
+.details-list li {
+    margin: 5px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1100px) {
+    .title {
+        font-size: 3em;
+    }
+}
+
 
 .titleImage .image {
     background: url("/public/images/general/coverImage.png") no-repeat center center fixed;
@@ -23,6 +41,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
     aspect-ratio: 1.6;
 }

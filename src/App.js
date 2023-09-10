@@ -35,17 +35,17 @@ const App = () => {
             <Navbar />
             <div className={"App"}>
                 <Routes>
-                    <Route path="/" exact element={<HomePage />} />
-                    <Route path="/current" element={<CurrentServerPage />} />
-                    <Route path="/shop" element={<ShopPage />} />
-                    <Route path="/upcoming" element={<UpcomingPage />} />
-                    <Route path="/past" element={<PastServersPage />} />
-                    <Route path="/funding" element={<FundingPage />} />
-                    <Route path="/register" element={<RegisterPage />} />
-                    <Route path="/login" element={<LoginPage />} />
-                    <Route path="/account" element={<AccountPage />} />
-                    <Route path="/server/*" element={<ServerRouter />} />
-                    <Route path="/admin/*" element={<AdminRouter />} />
+                    <Route path="/*" exact element={<HomePage />} />
+                    {/*<Route path="/current" element={<CurrentServerPage />} />*/}
+                    {/*<Route path="/shop" element={<ShopPage />} />*/}
+                    {/*<Route path="/upcoming" element={<UpcomingPage />} />*/}
+                    {/*<Route path="/past" element={<PastServersPage />} />*/}
+                    {/*<Route path="/funding" element={<FundingPage />} />*/}
+                    {/*<Route path="/register" element={<RegisterPage />} />*/}
+                    {/*<Route path="/login" element={<LoginPage />} />*/}
+                    {/*<Route path="/account" element={<AccountPage />} />*/}
+                    {/*<Route path="/server/*" element={<ServerRouter />} />*/}
+                    {/*<Route path="/admin/*" element={<AdminRouter />} />*/}
                 </Routes>
             </div>
             <MinecraftBackground />
