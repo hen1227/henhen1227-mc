@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
+body, html {
+  height: 100%;
+  margin: 0;
+  /*overflow: scroll;*/
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #121212;
+  color: #A8DBA8;
+  font-family: 'Minecraft', Arial, sans-serif;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  margin-top: 100px;
+  height: 100vh;
+  text-align: center;
+  background-color: #121212;
+  color: #A8DBA8;
+  font-family: 'Minecraft', Arial, sans-serif;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App h1 {
+  padding-top: 20vh;
+  font-size: 60px;
+}
+
+.fontOutline {
+  text-shadow: -3px -3px 0 #006500, 3px -3px 0 #006500, -3px 3px 0 #006500, 3px 3px 0 #006500;
+}
+
+.goodColors {
+  color: #A8DBA8;
+  color: #006500;
+
+  background-color: #121212;
+  background-color: #121212;
+
+  background-color: #d28818;
+  background-color: #f5a623;
+
+  background-color: #36827f;
+  background-color: #2b6864;
+}
+
+@font-face {
+  font-family: "Minecraft";
+  src: url('/public/fonts/MinecraftRegular-Bmg3.otf');
+}
+@font-face {
+  font-family: "Minecraft Bold";
+  src: url('/public/fonts/MinecraftBold-nMK1.otf');
 }

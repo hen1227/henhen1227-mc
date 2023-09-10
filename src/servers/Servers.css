@@ -1,0 +1,105 @@
+.main-container {
+    color: #A8DBA8;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+
+    min-width: 300px;
+    width: 65%;
+    align-content: center;
+
+    font-family: Minecraft, system-ui;
+}
+.main-container * {
+    font-family: Minecraft, system-ui;
+}
+.main-container p {
+    margin: 0 15px;
+    padding: 10px;
+    font-size: 14px;
+}
+.main-container b {
+    color: #58db58;
+    font-family: "Minecraft Bold", system-ui;
+    margin-right: 10px;
+}
+.main-container a {
+    /*color: #A8DBA8;*/
+    color: #58db58;
+    text-decoration: underline;
+}
+.main-container h2 {
+    color: #58db58;
+    margin-bottom: 20px;
+}
+.main-container h4 {
+    color: #58db58;
+    font-family: "Minecraft Bold", system-ui;
+}
+
+.details-container {
+    background-color: rgba(90, 105, 112, 0.15);
+    margin: 20px;
+    border-radius: 18px;
+}
+
+.details-container a {
+    text-decoration: none;
+    font-family: Minecraft;
+    color: #A8DBA8;
+    font-size: 12px;
+}
+
+.details-container h3 a {
+    text-decoration: none;
+    color: #58db58;
+    font-size: 24px;
+}
+
+.details-container h3 {
+    color: #58db58;
+    font-size: 24px;
+}
+
+.details-container h4 {
+    font-size: 14px;
+    font-family: Minecraft;
+    color: #606e60;
+    padding-bottom: 24px;
+}
+
+.details-container .download {
+    text-decoration: none;
+    font-family: Minecraft, system-ui;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #252e48;
+    padding: 4px 5px;
+    margin: 10px 15px 20px;
+}
+
+.details-container input {
+    /*margin-top: 12px;*/
+    margin: 12px;
+    background-color: #00000000;
+    border-radius: 8px;
+    padding: 2px 8px;
+    outline: none;
+    color: #58db58;
+    border: #252e48 3px solid;
+}
+.details-container button {
+    /*margin-top: 12px;*/
+    margin: 0;
+    background-color: #00000000;
+    border-radius: 8px;
+    padding: 2px 8px;
+    outline: none;
+    color: #58db58;
+    border: #252e48 3px solid;
+}
+
+.details-container ul {
+    list-style-type: none;
+}

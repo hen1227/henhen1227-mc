@@ -1,0 +1,19 @@
+.discordButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.discordButton button {
+    background-color: #7289DA; /* Discord color */
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.discordButton a {
+    color: #FFF;
+    text-decoration: none;
+}

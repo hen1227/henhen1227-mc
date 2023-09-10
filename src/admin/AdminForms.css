@@ -1,0 +1,97 @@
+/* Form Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #58db58;
+}
+
+.form-field {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-field-group {
+    display: flex;
+    justify-content: space-between;
+}
+.form-field-group .form-field {
+    width: 45%;
+    height: 292.7px;
+
+    margin: 0 2.5%;
+}
+
+.form-field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-field.long {
+    overflow: scroll;
+}
+
+.form-field-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.9em;
+}
+.form-field-inline input {
+    padding: 0;
+    width: 35px;
+}
+
+.form-field input[type="submit"] {
+    cursor: pointer;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+
+.form-field input[type="submit"]:hover {
+    background-color: #007B9A;
+}
+
+.form-tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.form-tooltip .tooltiptext {
+    visibility: hidden;
+    width: 320px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -160px; /* Use half the width (320/2 = 160), to center the tooltip */
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.form-tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

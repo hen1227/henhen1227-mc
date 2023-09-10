@@ -1,0 +1,46 @@
+.minecraftHeader {
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.minecraftHeader .minecraftIP {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+    margin: 10px auto;
+    padding: 4px 10px;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 6px;
+
+    font-family: "Minecraft";
+    background-image: url("/public/images/general/dirtBackground.png");
+}
+
+.minecraftHeader img {
+    width: 11.25%;
+    min-width: 120px;
+    /*height: 120px;*/
+    aspect-ratio: 1;
+    border-radius: 14px;
+}
+
+.minecraftHeader input {
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    background-color: #00000000;
+    color: white;
+    outline: none;
+
+}
+
+.minecraftHeader button {
+    background-color: #00000000;
+    margin: 0;
+    color: #A8DBA8;
+    border: none;
+}

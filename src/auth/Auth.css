@@ -1,0 +1,100 @@
+.login-form-container, .register-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #A8DBA8;
+    font-family: 'Minecraft', Arial, sans-serif;
+    background-color: #121212;
+}
+
+.auth-form {
+    width: 300px;
+    padding: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #121212;
+    color: #A8DBA8;
+    font-family: 'Minecraft', Arial, sans-serif;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.auth-form label span {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+    color: #A8DBA8;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #A8DBA8;
+    border-radius: 3px;
+    background-color: #121212;
+    color: #A8DBA8;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: #121212;
+    border: none;
+    border-radius: 3px;
+    background-color: #A8DBA8;
+    cursor: pointer;
+    font-family: 'Minecraft', Arial, sans-serif;
+}
+
+.auth-button:hover {
+    background-color: #006500;
+}
+
+.auth-error {
+    color: #e57373;
+    font-size: 0.875em;
+    margin-top: 1rem;
+}
+
+.auth-button-secondary {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: #121212;
+    border: none;
+    border-radius: 3px;
+    background-color: #36827f;
+    cursor: pointer;
+    font-family: 'Minecraft', Arial, sans-serif;
+}
+
+.auth-button-secondary:hover {
+    background-color: #2b6864;
+}
+
+.auth-alt-option {
+    margin-top: 1rem;
+    font-size: 0.875em;
+}
+
+.auth-alt-button {
+    padding: 0.25rem;
+    color: #121212;
+    border: none;
+    border-radius: 3px;
+    background-color: #A8DBA8;
+    cursor: pointer;
+    font-family: 'Minecraft', Arial, sans-serif;
+    font-size: 0.875em;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.auth-alt-button:hover {
+    background-color: #006500;
+}

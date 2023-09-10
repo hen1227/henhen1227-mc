@@ -1,0 +1,28 @@
+.titleImage {
+    width: 100vw;
+    height: 400px;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    overflow: clip;
+}
+
+.titleImage h1 {
+    padding: 0;
+    margin: 0;
+    top: 160px;
+    position: absolute;
+    z-index: 5;
+
+    width: 100%;
+}
+
+.titleImage .image {
+    background: url("/public/images/general/coverImage.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 1.6;
+}

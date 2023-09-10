@@ -1,0 +1,12 @@
+.graph-container {
+    align-items: center;
+    width: 50%;
+    height: 40%;
+    margin: 0 auto;
+}
+
+.graph-data-container {
+    border-radius: 20px;
+    padding: 20px 15px;
+    background: #5a697010;
+}
