@@ -17,8 +17,8 @@ const HomePage = () => {
                         <h3 className="fontOutlineThin">Details</h3>
                         <ul className='details-list'>
                             <li>The server is running on 1.20.1</li>
-                            <li>The experimental villager trades have been enabled.</li>
-                            <li>The experimental bundles feature has been enabled.</li>
+                            {/*<li>The experimental villager trades have been enabled.</li>*/}
+                            {/*<li>The experimental bundles feature has been enabled.</li>*/}
                             <li>Server wide events will happen about every week starting soon.</li>
                             <li>All events are optional, but provide a fun way to compete for points.</li>
                             <li>The leaderboards can be found <Link style={{textDecoration: 'underline', fontSize: 16}} to={'/leaderboard'}>here</Link></li>
