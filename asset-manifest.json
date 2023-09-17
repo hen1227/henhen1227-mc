@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/henhen1227-mc/static/css/main.de5ac4ac.css",
-    "main.js": "/henhen1227-mc/static/js/main.83ea6401.js",
-    "static/media/coverImage.png": "/henhen1227-mc/static/media/coverImage.20e50cca2f15561c177c.png",
-    "static/media/OriginsModList.txt": "/henhen1227-mc/static/media/OriginsModList.3e120d4cc5690476ca4f.txt",
-    "static/media/MinecraftBold-nMK1.otf": "/henhen1227-mc/static/media/MinecraftBold-nMK1.a9b3bc2a90dd462c9c18.otf",
-    "static/media/MinecraftRegular-Bmg3.otf": "/henhen1227-mc/static/media/MinecraftRegular-Bmg3.82ba08919dc2add9422f.otf",
-    "index.html": "/henhen1227-mc/index.html",
-    "main.de5ac4ac.css.map": "/henhen1227-mc/static/css/main.de5ac4ac.css.map",
-    "main.83ea6401.js.map": "/henhen1227-mc/static/js/main.83ea6401.js.map"
+    "main.css": "/static/css/main.16fe030c.css",
+    "main.js": "/static/js/main.a2606e96.js",
+    "static/media/coverImage.png": "/static/media/coverImage.20e50cca2f15561c177c.png",
+    "static/media/OriginsModList.txt": "/static/media/OriginsModList.3e120d4cc5690476ca4f.txt",
+    "static/media/MinecraftBold-nMK1.otf": "/static/media/MinecraftBold-nMK1.a9b3bc2a90dd462c9c18.otf",
+    "static/media/MinecraftRegular-Bmg3.otf": "/static/media/MinecraftRegular-Bmg3.82ba08919dc2add9422f.otf",
+    "index.html": "/index.html",
+    "main.16fe030c.css.map": "/static/css/main.16fe030c.css.map",
+    "main.a2606e96.js.map": "/static/js/main.a2606e96.js.map"
   },
   "entrypoints": [
-    "static/css/main.de5ac4ac.css",
-    "static/js/main.83ea6401.js"
+    "static/css/main.16fe030c.css",
+    "static/js/main.a2606e96.js"
   ]
 }
