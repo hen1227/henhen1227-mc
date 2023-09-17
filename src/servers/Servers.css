@@ -41,14 +41,22 @@
     background-color: rgba(90, 105, 112, 0.15);
     margin: 20px;
     border-radius: 18px;
+    /*width: 400px;*/
     padding: 10px 10px 20px 10px;
 }
 
+.details-container p {
+    padding: 10px;
+    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
+}
+
 .details-container a {
-    text-decoration: none;
-    font-family: Minecraft;
+    text-decoration: underline;
+    font-family: Minecraft, monospace;
     color: #A8DBA8;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .details-container h3 a {
@@ -64,7 +72,7 @@
 
 .details-container h4 {
     font-size: 14px;
-    font-family: Minecraft;
+    font-family: Minecraft, monospace;
     color: #606e60;
     padding-bottom: 24px;
 }

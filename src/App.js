@@ -24,6 +24,7 @@ import ServerRouter from "./servers/ServerRouter";
 import { AuthProvider } from "./auth/AuthContext";
 import AdminRouter from "./admin/AdminRouter";
 import FundingPage from "./pages/FundingPage";
+import LeaderBoardPage from "./pages/LeaderBoardPage";
 
 
 const App = () => {
@@ -35,7 +36,8 @@ const App = () => {
             <Navbar />
             <div className={"App"}>
                 <Routes>
-                    <Route path="/*" exact element={<HomePage />} />
+                    <Route path="/" exact element={<HomePage />} />
+                    <Route path="/home" exact element={<HomePage />} />
                     {/*<Route path="/current" element={<CurrentServerPage />} />*/}
                     {/*<Route path="/shop" element={<ShopPage />} />*/}
                     {/*<Route path="/upcoming" element={<UpcomingPage />} />*/}
@@ -43,6 +45,7 @@ const App = () => {
                     {/*<Route path="/funding" element={<FundingPage />} />*/}
                     {/*<Route path="/register" element={<RegisterPage />} />*/}
                     {/*<Route path="/login" element={<LoginPage />} />*/}
+                    <Route path="/leaderboard" element={<LeaderBoardPage />} />
                     {/*<Route path="/account" element={<AccountPage />} />*/}
                     {/*<Route path="/server/*" element={<ServerRouter />} />*/}
                     {/*<Route path="/admin/*" element={<AdminRouter />} />*/}

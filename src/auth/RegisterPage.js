@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import "./Auth.css"
 import {useAuth} from "./AuthContext";
+import sendAPICall from "./APIs";
 
 function RegisterPage() {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [passwordConfirm, setPasswordConfirm] = useState('');
     const [error, setError] = useState('');
@@ -19,19 +20,7 @@ function RegisterPage() {
         }
 
         try {
-            const response = await fetch('http://localhost:4001/auth/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({username, password})
-            });
-
-            if (!response.ok) {
-                throw new Error('Network response was not ok');
-            }
-
-            const data = await response.json();
+            const data = await sendAPICall('/register', 'POST', {email, password}, null, true);
 
             login(data.accessToken, data.user);
             navigate("/account");
@@ -46,11 +35,11 @@ function RegisterPage() {
         <div className="register-form-container">
             <form className="auth-form" onSubmit={handleSubmit}>
                 <label>
-                    Username:
+                    Email:
                     <input
-                        type="text"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="auth-input"
                         required
                     />

@@ -29,7 +29,7 @@ export function AuthProvider({ children }) {
                 })
                 .then(data => {
                     data.token = token;
-                    data.avatar = `https://crafatar.com/avatars/${data.mcUUID}?overlay=true`;
+                    data.avatar = `https://crafatar.com/avatars/${data.uuid}?overlay=true`;
                     setCurrentUser(data);
                     setIsLoading(false);
                 })

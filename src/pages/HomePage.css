@@ -1,7 +1,7 @@
 .titleImage {
     width: 100vw;
     height: 420px;
-    z-index: 0;
+    z-index: 3;
     position: absolute;
     top: 0;
     overflow: clip;
@@ -24,7 +24,7 @@
 }
 
 .details-list li {
-    margin: 5px;
+    margin: 10px;
     font-weight: bold;
 }
 
@@ -44,4 +44,7 @@
     min-height: 100%;
     min-width: 100%;
     aspect-ratio: 1.6;
+
+    position: absolute;
+    top: 0;
 }

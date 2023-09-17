@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useAuth } from './AuthContext';
 import './Auth.css';
+import sendAPICall from "./APIs";
 
 function LoginPage() {
-    const [username, setUsername] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
@@ -14,21 +15,8 @@ function LoginPage() {
         event.preventDefault();
 
         try {
-            const response = await fetch('http://localhost:4001/auth/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    username,
-                    password
-                }),
-            });
+            const data = await sendAPICall('/login', 'POST', { email, password }, null, true);
 
-            if (!response.ok) {
-                throw new Error('Failed to log in');
-            }
-            const data = await response.json();
             login(data.accessToken, data.user);
 
             navigate("/account");
@@ -45,8 +33,8 @@ function LoginPage() {
                     Username:
                     <input
                         type="text"
-                        value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="auth-input"
                     />
                 </label>

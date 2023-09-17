@@ -28,6 +28,14 @@ body, html {
   text-shadow: -3px -3px 0 #006500, 3px -3px 0 #006500, -3px 3px 0 #006500, 3px 3px 0 #006500;
 }
 
+.fontOutlineThin {
+  text-shadow: -2px -2px 0 #006500, 2px -2px 0 #006500, -2px 2px 0 #006500, 2px 2px 0 #006500;
+}
+
+.fontOutlineWhite {
+  text-shadow: -1px -1px 0 #a0a0a0, 1px -1px 0 #a0a0a0, -1px 1px 0 #a0a0a0, 1px 1px 0 #a0a0a0;
+}
+
 .goodColors {
   color: #A8DBA8;
   color: #006500;

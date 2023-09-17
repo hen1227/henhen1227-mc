@@ -1,0 +1,64 @@
+.podium-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    border-style: none;
+    border-bottom: #486462 solid 20px;
+    border-radius: 20px;
+    max-width: 85%;
+    min-width: fit-content;
+    width: fit-content;
+    margin: 40px auto 60px;
+}
+
+.podium-item {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.podium-value {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #039388;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #A8DBA8;
+    text-shadow: 2px -1px 0 #006500, 1px -2px 0 #006500;
+    box-shadow: 1px 2px 2px #12121290;
+}
+
+#first {
+    height: 150px;
+    background-color: #e1c01b;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#second {
+    height: 120px;
+    background-color: #d28818;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#third {
+    height: 100px;
+    background-color: #a26114;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+.podium-label {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: "Minecraft Bold", monospace;
+    color: #A8DBA8;
+    text-shadow: 0 0 5px #121212;
+    /*color: #006500;*/
+    /*text-shadow: 0 0 5px #ddd;*/
+    /*text-shadow: 2px -1px 0 #006500, 1px -2px 0 #006500;*/
+}

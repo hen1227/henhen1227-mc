@@ -17,7 +17,8 @@ function AccountPage() {
 
     return (
         <div>
-            <h2>Welcome, {currentUser.username}!</h2>
+            <h2>Welcome, {currentUser.username ? currentUser.username : currentUser.email}!</h2>
+            {currentUser.isOp && <h3>You are an OP</h3>}
             <button onClick={logout}>Log out</button>
         </div>
     );
