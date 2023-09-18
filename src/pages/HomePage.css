@@ -32,6 +32,9 @@
     .title {
         font-size: 3em;
     }
+    .details-list {
+        width: 100%;
+    }
 }
 
 

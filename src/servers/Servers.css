@@ -10,6 +10,18 @@
 
     font-family: Minecraft, system-ui;
 }
+
+@media screen and (max-width: 1100px) {
+    .main-container {
+        width: 95%;
+    }
+
+    .details-container {
+        padding: 0;
+        background-color: red;
+    }
+}
+
 .main-container * {
     font-family: Minecraft, system-ui;
 }
