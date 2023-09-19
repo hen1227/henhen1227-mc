@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.93aa202a.css",
-    "main.js": "/static/js/main.a2606e96.js",
+    "main.css": "/static/css/main.3d3a758a.css",
+    "main.js": "/static/js/main.8a811a59.js",
     "static/media/coverImage.png": "/static/media/coverImage.20e50cca2f15561c177c.png",
     "static/media/OriginsModList.txt": "/static/media/OriginsModList.3e120d4cc5690476ca4f.txt",
     "static/media/MinecraftBold-nMK1.otf": "/static/media/MinecraftBold-nMK1.a9b3bc2a90dd462c9c18.otf",
     "static/media/MinecraftRegular-Bmg3.otf": "/static/media/MinecraftRegular-Bmg3.82ba08919dc2add9422f.otf",
     "index.html": "/index.html",
-    "main.93aa202a.css.map": "/static/css/main.93aa202a.css.map",
-    "main.a2606e96.js.map": "/static/js/main.a2606e96.js.map"
+    "main.3d3a758a.css.map": "/static/css/main.3d3a758a.css.map",
+    "main.8a811a59.js.map": "/static/js/main.8a811a59.js.map"
   },
   "entrypoints": [
-    "static/css/main.93aa202a.css",
-    "static/js/main.a2606e96.js"
+    "static/css/main.3d3a758a.css",
+    "static/js/main.8a811a59.js"
   ]
 }
