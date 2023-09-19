@@ -11,16 +11,19 @@ const LeaderBoardPage = () => {
             setAllPlayers(data.map((player)=>{
                 return player;
             }));
+
+            console.log("All players: ", data);
             // console.log(allPlayers.sort((a, b) => b.points - a.points));
         });
     }, []);
+
 
     return (
         <div className={'main-container'}>
             <h1 style={{paddingBottom: 100}}>Leaderboards:</h1>
 
             <h3>Total Points</h3>
-            {allPlayers && <Podium players={allPlayers.sort((a, b) => b.points - a.points).map((p) => p.username)} values={allPlayers.map((p) => p.points)}/>}
+            {allPlayers && <Podium allPlayersData={allPlayers} players={allPlayers.sort((a, b) => b.points - a.points).map((p) => p.username)} values={allPlayers.map((p) => p.points)}/>}
 
             {/*<h3>Event Wins</h3>*/}
             {/*{allPlayers && <Podium players={allPlayers.sort((a, b) => b.eventWins - a.eventWins)} values={allPlayers.map((p) => p.eventWins)}/>}*/}
