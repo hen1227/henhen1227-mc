@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d3a758a.css",
-    "main.js": "/static/js/main.8a811a59.js",
+    "main.css": "/static/css/main.3f73dc75.css",
+    "main.js": "/static/js/main.17a1f8ff.js",
+    "static/media/amplified.png": "/static/media/amplified.fda3782cc266eca00da1.png",
+    "static/media/OPCF.png": "/static/media/OPCF.76f2351021655bd4e5f4.png",
     "static/media/coverImage.png": "/static/media/coverImage.20e50cca2f15561c177c.png",
-    "static/media/OriginsModList.txt": "/static/media/OriginsModList.3e120d4cc5690476ca4f.txt",
+    "static/media/riding_happy_ghast.png": "/static/media/riding_happy_ghast.f8835ebc61f7b937e0fc.png",
+    "static/media/group_photo.png": "/static/media/group_photo.137558ca771ab5ef8688.png",
     "static/media/MinecraftBold-nMK1.otf": "/static/media/MinecraftBold-nMK1.a9b3bc2a90dd462c9c18.otf",
     "static/media/MinecraftRegular-Bmg3.otf": "/static/media/MinecraftRegular-Bmg3.82ba08919dc2add9422f.otf",
     "index.html": "/index.html",
-    "main.3d3a758a.css.map": "/static/css/main.3d3a758a.css.map",
-    "main.8a811a59.js.map": "/static/js/main.8a811a59.js.map"
+    "main.3f73dc75.css.map": "/static/css/main.3f73dc75.css.map",
+    "main.17a1f8ff.js.map": "/static/js/main.17a1f8ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d3a758a.css",
-    "static/js/main.8a811a59.js"
+    "static/css/main.3f73dc75.css",
+    "static/js/main.17a1f8ff.js"
   ]
 }
