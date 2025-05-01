@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f73dc75.css",
-    "main.js": "/static/js/main.17a1f8ff.js",
+    "main.css": "/static/css/main.90e1625c.css",
+    "main.js": "/static/js/main.f63c5067.js",
     "static/media/amplified.png": "/static/media/amplified.fda3782cc266eca00da1.png",
     "static/media/OPCF.png": "/static/media/OPCF.76f2351021655bd4e5f4.png",
     "static/media/coverImage.png": "/static/media/coverImage.20e50cca2f15561c177c.png",
@@ -10,11 +10,11 @@
     "static/media/MinecraftBold-nMK1.otf": "/static/media/MinecraftBold-nMK1.a9b3bc2a90dd462c9c18.otf",
     "static/media/MinecraftRegular-Bmg3.otf": "/static/media/MinecraftRegular-Bmg3.82ba08919dc2add9422f.otf",
     "index.html": "/index.html",
-    "main.3f73dc75.css.map": "/static/css/main.3f73dc75.css.map",
-    "main.17a1f8ff.js.map": "/static/js/main.17a1f8ff.js.map"
+    "main.90e1625c.css.map": "/static/css/main.90e1625c.css.map",
+    "main.f63c5067.js.map": "/static/js/main.f63c5067.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f73dc75.css",
-    "static/js/main.17a1f8ff.js"
+    "static/css/main.90e1625c.css",
+    "static/js/main.f63c5067.js"
   ]
 }
