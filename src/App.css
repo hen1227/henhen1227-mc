@@ -1,60 +1,234 @@
+/* App.css - Global styles with improved colors */
+:root {
+  /* Primary color palette */
+  --background-dark: #1E1E1E;      /* Slightly lighter than before */
+  --background-light: #2A2A2A;     /* For containers and cards */
+  --accent-primary: #2c8731;       /* Main green */
+  --accent-secondary: #A8DBA8;     /* Light green */
+  --text-primary: #FFFFFF;         /* White text */
+  --text-secondary: #CCCCCC;       /* Light gray text */
+  --border-color: #4CAF50;         /* Border color */
+  --header-color: #d6ffd6;         /* Header text color */
+}
+
 body, html {
   height: 100%;
   margin: 0;
-  /*overflow: scroll;*/
-
-  background-color: #121212;
-  color: #A8DBA8;
+  padding: 0;
+  background-color: var(--background-dark);
+  color: var(--text-primary);
   font-family: 'Minecraft', Arial, sans-serif;
-  justify-content: center;
+  line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
-.App {
-  margin-top: 100px;
-  height: 100vh;
-  text-align: center;
-  background-color: #121212;
-  color: #A8DBA8;
-  font-family: 'Minecraft', Arial, sans-serif;
-  justify-content: center;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App h1 {
-  padding-top: 20vh;
-  font-size: 60px;
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.fontOutline {
-  text-shadow: -3px -3px 0 #006500, 3px -3px 0 #006500, -3px 3px 0 #006500, 3px 3px 0 #006500;
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
 }
 
-.fontOutlineThin {
-  text-shadow: -2px -2px 0 #006500, 2px -2px 0 #006500, -2px 2px 0 #006500, 2px 2px 0 #006500;
+::-webkit-scrollbar-thumb {
+  background: var(--accent-primary);
+  border-radius: 4px;
 }
 
-.fontOutlineWhite {
-  text-shadow: -1px -1px 0 #a0a0a0, 1px -1px 0 #a0a0a0, -1px 1px 0 #a0a0a0, 1px 1px 0 #a0a0a0;
+::-webkit-scrollbar-thumb:hover {
+  background: #5DBE60;
 }
 
-.goodColors {
-  color: #A8DBA8;
-  color: #006500;
-
-  background-color: #121212;
-  background-color: #121212;
-
-  background-color: #d28818;
-  background-color: #f5a623;
-
-  background-color: #36827f;
-  background-color: #2b6864;
-}
-
+/* Font imports */
 @font-face {
   font-family: "Minecraft";
   src: url('/public/fonts/MinecraftRegular-Bmg3.otf');
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Minecraft Bold";
   src: url('/public/fonts/MinecraftBold-nMK1.otf');
+  font-display: swap;
+}
+
+/* Common classes */
+.fontOutline {
+  text-shadow: -3px -3px 0 var(--accent-primary),
+  3px -3px 0 var(--accent-primary),
+  -3px 3px 0 var(--accent-primary),
+  3px 3px 0 var(--accent-primary);
+}
+
+.fontOutlineThin {
+  text-shadow: -2px -2px 0 var(--accent-primary),
+  2px -2px 0 var(--accent-primary),
+  -2px 2px 0 var(--accent-primary),
+  2px 2px 0 var(--accent-primary);
+}
+
+.fontOutlineWhite {
+  text-shadow: -1px -1px 0 #a0a0a0,
+  1px -1px 0 #a0a0a0,
+  -1px 1px 0 #a0a0a0,
+  1px 1px 0 #a0a0a0;
+}
+
+/* Button styles */
+.minecraft-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: 'Minecraft', sans-serif;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.minecraft-button.primary {
+  background-color: var(--accent-primary);
+  color: white;
+  border: 2px solid var(--accent-secondary);
+  box-shadow: 0 4px 0 #3E8E41;
+}
+
+.minecraft-button.primary:hover {
+  background-color: #5DBE60;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #3E8E41;
+}
+
+.minecraft-button.secondary {
+  background-color: #444444;
+  color: var(--accent-secondary);
+  border: 2px solid #555555;
+  box-shadow: 0 4px 0 #333333;
+}
+
+.minecraft-button.secondary:hover {
+  background-color: #555555;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #333333;
+}
+
+.minecraft-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #3E8E41;
+}
+
+/* Container styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Card styles */
+.minecraft-card {
+  background-color: var(--background-light);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Page layout classes */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-content {
+  flex: 1;
+  padding: 80px 0 40px;
+}
+
+/* Form styles */
+.minecraft-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: var(--background-light);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: 'Minecraft', sans-serif;
+  color: var(--header-color);
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-family: 'Minecraft', sans-serif;
+  background-color: #333333;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  color: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent-secondary);
+}
+
+/* Loading spinner */
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 40px auto;
+  border: 4px solid rgba(76, 175, 80, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid var(--accent-primary);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Enhanced section styles */
+.section-title {
+  font-family: 'Minecraft Bold', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--header-color);
+  text-shadow: -2px -2px 0 var(--accent-primary),
+  2px -2px 0 var(--accent-primary),
+  -2px 2px 0 var(--accent-primary),
+  2px 2px 0 var(--accent-primary);
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .page-content {
+    padding: 60px 0 30px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
 }

@@ -1,0 +1,263 @@
+.minecraft-header {
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px 40px 20px;
+    background-image: url('/public/images/general/coverImage.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 500px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.minecraft-header.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.minecraft-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    color: #ffffff;
+}
+
+.server-icon {
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    border: 4px solid #006500;
+    box-shadow: 0 0 20px rgba(0, 101, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.server-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.server-title {
+    font-family: 'Minecraft Bold', sans-serif;
+    font-size: 3.5rem;
+    margin: 0;
+    color: #A8DBA8;
+    text-shadow:
+            0 0 10px rgba(0, 101, 0, 0.7),
+            -3px -3px 0 #006500,
+            3px -3px 0 #006500,
+            -3px 3px 0 #006500,
+            3px 3px 0 #006500;
+}
+
+.server-subtitle {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 1.5rem;
+    margin: 10px 0 20px 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.server-ip-container {
+    margin: 20px 0;
+}
+
+.minecraft-ip-box {
+    display: flex;
+    background-image: url('/public/images/general/dirtBackground.png');
+    border: 3px solid #006500;
+    border-radius: 8px;
+    padding: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.minecraft-ip-box input {
+    font-family: 'Minecraft', sans-serif;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.minecraft-ip-box input:focus {
+    outline: none;
+}
+
+.minecraft-ip-box button {
+    font-family: 'Minecraft', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #A8DBA8;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    min-width: 70px;
+}
+
+.minecraft-ip-box button:hover {
+    color: #ffffff;
+}
+
+.minecraft-ip-box button.copied {
+    color: #ffffff;
+}
+
+.server-version,
+.player-count {
+    font-family: 'Minecraft', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 8px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.online-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #00ff00;
+    border-radius: 50%;
+    display: inline-block;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+}
+
+.header-actions {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.minecraft-button {
+    font-family: 'Minecraft', sans-serif;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.minecraft-button.primary {
+    background-color: #006500;
+    color: white;
+    border: 2px solid #A8DBA8;
+    box-shadow: 0 4px 0 #004000;
+}
+
+.minecraft-button.secondary {
+    background-color: #333333;
+    color: #A8DBA8;
+    border: 2px solid #555555;
+    box-shadow: 0 4px 0 #222222;
+}
+
+.minecraft-button.primary:hover {
+    background-color: #007500;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #004000;
+}
+
+.minecraft-button.secondary:hover {
+    background-color: #444444;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 #222222;
+}
+
+.minecraft-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #004000;
+}
+
+@media (max-width: 768px) {
+    .minecraft-header {
+        padding: 60px 10px 30px 10px;
+    }
+
+    .server-title {
+        font-size: 2.5rem;
+    }
+
+    .server-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .server-icon {
+        width: 120px;
+        height: 120px;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        gap: 10px;
+        width: 80%;
+    }
+}
+
+.online-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.online-dot.active {
+    background-color: #00ff00;
+    animation: pulse 2s infinite;
+}
+
+.online-dot.inactive {
+    background-color: #ff0000;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(0, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0);
+    }
+}

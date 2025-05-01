@@ -13,10 +13,6 @@ import OriginsServer from "./origins/OriginsServer";
 const App = () => {
     return (
         <div>
-            <nav>
-                <Link to="me">My Profile</Link>
-            </nav>
-
             <Routes>
                 <Route path="origins" element={<OriginsServer />} />
             </Routes>

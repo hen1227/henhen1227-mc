@@ -1,5 +1,5 @@
 import React from 'react';
-import './DiscordButton.css';
+import '../styles/DiscordButton.css';
 
 const DiscordButton = () => (
     <div className="discordButton">
